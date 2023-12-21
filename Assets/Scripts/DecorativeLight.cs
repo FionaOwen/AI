@@ -19,7 +19,7 @@ public class DecorativeLight : MonoBehaviour
         {
             materials = renderer.materials;
             
-            baseColors = materials[materialIndexToChange].GetColor("_EmissionColor");
+            baseColors = materials[materialIndexToChange].GetColor("_EmissionMap");
           
 
             currentIntensity = minEmission;
@@ -40,7 +40,7 @@ public class DecorativeLight : MonoBehaviour
             Color finalColor = baseColors * Mathf.LinearToGammaSpace(Mathf.Lerp(minEmission, maxEmission, currentIntensity));
 
             // Set the emission color in the material
-            materials[materialIndexToChange].SetColor("_EmissionColor", finalColor);
+            materials[materialIndexToChange].SetColor("_EmissionMap", finalColor);
         
 
         // Ensure changes are applied immediately

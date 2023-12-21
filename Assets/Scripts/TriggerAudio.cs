@@ -24,16 +24,16 @@ public class TriggerAudio : MonoBehaviour
             StartCoroutine(PlayAudios());
         }
     }
-    public void OnTriggerStay(Collider other)
-    {
-        if (stopAudioOnExit)
-        {
-            if (other.tag == otherObjectTag)
-            {
-                StartCoroutine(StopAudioWithWaiting());
-            }
-        }
-    }
+    //public void OnTriggerStay(Collider other)
+    //{
+    //    if (stopAudioOnExit)
+    //    {
+    //        if (other.tag == otherObjectTag)
+    //        {
+    //            StartCoroutine(StopAudioWithWaiting());
+    //        }
+    //    }
+    //}
     IEnumerator PlayAudios()
     {
         //yield return new WaitForSeconds(initialAudioWaitingTime);

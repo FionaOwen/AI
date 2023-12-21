@@ -18,3 +18,31 @@ Santa, have you brought me presents? #line:02f5b77
     <<set $icannot=true>>
     <<jump AJCrying>>
 ===
+title: whattobuy
+tag: Whatiswithus
+---
+<<declare $toatMarshmellows=false>>
+<<declare $notReadyToToast=false>>
+
+Santa, would you like to toast marshmallows with us? #line:05d1e81 
+//option
+-> Yes #line:0b7c094 
+    <<set $toatMarshmellows=true>>
+    <<jump wherIsMarshmellow>>
+-> No #line:02e6c3e 
+    <<set $notReadyToToast=false>>
+    <<jump endTheConversation>>
+===
+title: wherIsMarshmellow
+tag: buyMarshmellow
+---
+<<declare $followSanta=false>>
+<<declare $dontFollowSanta=false>>
+
+We need to go here/there points to stall,says: would you like to follow me? #line:0b2a5a0 
+//option
+-> Yes #line:01aa57f 
+    <<set $followSanta=true>>
+-> No #line:0f95fc0 
+    <<set $dontFollowSanta=true>>
+===

@@ -1,0 +1,25 @@
+﻿title: Kate
+tags:
+---
+
+===
+title: KateIntroduction
+tag: Shopkeeper
+---
+<<declare $wantmarshmellow=false>>
+<<declare $dontwant=false>>
+
+Would you like these marshmallows? #line:0a9d4c5 
+//option
+-> Yes #line:0e3ef11 
+    <<set $wantmarshmellow=true>>
+    <<jump takeMarshmellows>>
+-> No #line:0d966dc 
+    <<set $dontwant=true>>
+    <<jump whatelse>>
+===
+title: takeMarshmellows
+tag: marshmellowsReady
+---
+Here you go. #line:0a4ee3a 
+===
