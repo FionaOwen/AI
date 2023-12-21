@@ -1,0 +1,20 @@
+﻿title: AJScript
+tags:
+---
+
+===
+title: AJIntroduction
+tag: AJStart
+---
+<<declare $ican=false>>
+<<declare $icannot=false>>
+
+Santa, have you brought me presents? #line:02f5b77 
+//option
+-> Yes #line:0253a9d 
+    <<set $ican=true>>
+    <<jump whattobuy>>
+-> No  #line:0f5d7b7 
+    <<set $icannot=true>>
+    <<jump AJCrying>>
+===

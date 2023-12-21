@@ -1,0 +1,20 @@
+﻿title: ShopKeeperKate
+tags:
+---
+
+===
+title: KateIntroduction
+tag: Shopkeeper
+---
+<<declare $wantmarshmellow=false>>
+<<declare $dontwant=false>>
+
+Would you like these marshmallows?
+//option
+-> Yes
+    <<set $wantmarshmellow=true>>
+    <<jump takeMarshmellows>>
+-> No
+    <<set $dontwant=true>>
+    <<jump whatelse>>
+===
