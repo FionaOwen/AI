@@ -1,7 +1,7 @@
 using UnityEngine;
 using Yarn.Unity;
 
-public class KateInteraction : MonoBehaviour
+public class YesNoDialogHandler : MonoBehaviour
 {
     public GameObject marshmallowObject;
 
@@ -20,7 +20,7 @@ public class KateInteraction : MonoBehaviour
     }
 
     [YarnCommand("donotwantmarshmellow")]
-    public void WhatElse()
+    public void WhatElseBye()
     {
 
             Debug.Log("Player doesn't want marshmallows! Implement your logic here.");

@@ -6,7 +6,11 @@
   "excludeFiles": [
     "**/*~/*"
   ],
-  "localisation": {},
+  "localisation": {
+    "en": {
+      "assets": "DialogueAudio"
+    }
+  },
   "baseLanguage": "en",
   "compilerOptions": {}
 }
