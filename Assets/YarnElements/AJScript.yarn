@@ -28,10 +28,10 @@ Santa, would you like to toast marshmallows with us? #line:05d1e81
 //option
 -> Yes #line:0b7c094 
     <<set $toatMarshmellows=true>>
-    <<jump wherIsMarshmellow>>
+    <<jump givethemarshmallow>>
 -> No #line:02e6c3e 
     <<set $notReadyToToast=false>>
-    <<jump endTheConversation>>
+    <<jump wherIsMarshmellow>>
 ===
 title: wherIsMarshmellow
 tag: buyMarshmellow
