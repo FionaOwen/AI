@@ -33,6 +33,33 @@ public class NPCFollowPlayer : MonoBehaviour
 
     void Update()
     {
+        //if (navMeshAgent != null && animator != null && player != null)
+        //{
+        //    // Set the destination to the player's position
+        //    navMeshAgent.SetDestination(player.position);
+
+        //    // Check if the NPC is moving (use a small epsilon to account for floating point precision)
+        //    bool isWalking = navMeshAgent.velocity.sqrMagnitude > 0.01f;
+
+        //    // Update the Animator parameter for walking animation
+        //    animator.SetBool("IsWalking", isWalking);
+        //    animator.Play("Walking2");
+
+        //    if (navMeshAgent.remainingDistance < 2.1f)
+        //    {
+        //        // Stop the NPC
+        //        navMeshAgent.isStopped = true;
+        //        // Play a different animation (e.g., idle animation)
+        //        Debug.Log("Stopping animation");
+        //        animator.Play("Idle");
+        //    }
+        //    else
+        //    {
+        //        // Ensure the NPC is not stopped if it hasn't reached the destination yet
+        //        navMeshAgent.isStopped = false;
+        //    }
+        //}
+
         if (navMeshAgent != null && animator != null && player != null)
         {
             // Set the destination to the player's position
@@ -43,14 +70,22 @@ public class NPCFollowPlayer : MonoBehaviour
 
             // Update the Animator parameter for walking animation
             animator.SetBool("IsWalking", isWalking);
-            animator.Play("Walking2");
 
-            if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 1.5f)
+            if (isWalking)
+            {
+                // Play walking animation
+                animator.Play("Walking2");
+            }
+            else
+            {
+                // Play idle animation
+                animator.Play("Idle");
+            }
+
+            if (navMeshAgent.remainingDistance < 2.1f)
             {
                 // Stop the NPC
                 navMeshAgent.isStopped = true;
-                // Play a different animation (e.g., idle animation)
-                animator.Play("Idle");
             }
             else
             {

@@ -1,0 +1,13 @@
+﻿title: Amy
+tags:
+---
+
+===
+title: AmyIntroduction
+tag: Shopkeeper
+---
+<<declare $iwillbuy=false>>
+<<declare $iwontbuy=false>>
+
+Could you please buy some Marshmallows for my brother?
+===

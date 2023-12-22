@@ -9,6 +9,8 @@ TagManager:
   - GolfClub
   - NPC
   - Dialogue Canvas
+  - Marshmellow
+  - CandyArea
   layers:
   - Default
   - TransparentFX

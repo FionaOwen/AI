@@ -1,0 +1,41 @@
+# Blender MTL File: 'Marshmallows.blend'
+# Material Count: 3
+
+newmtl MarshmallowMidPoly
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Normal_DirectX.jpg
+map_Kd E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Base_Color.jpg
+map_Ns E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Roughness.jpg
+
+newmtl MarshmallowMidPoly.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Normal_DirectX.jpg
+map_Kd E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Base_Color_v3.jpg
+map_Ns E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Roughness.jpg
+
+newmtl MarshmallowMidPoly.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Normal_DirectX.jpg
+map_Kd E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Base_Color_v2.jpg
+map_Ns E:\\Progetto_InCorso\\Marshmallow\\Textures\\MarshmallowMidPoly_Roughness.jpg
