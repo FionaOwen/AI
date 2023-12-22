@@ -44,6 +44,19 @@ public class NPCFollowPlayer : MonoBehaviour
             // Update the Animator parameter for walking animation
             animator.SetBool("IsWalking", isWalking);
             animator.Play("Walking2");
+
+            if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 1.5f)
+            {
+                // Stop the NPC
+                navMeshAgent.isStopped = true;
+                // Play a different animation (e.g., idle animation)
+                animator.Play("Idle");
+            }
+            else
+            {
+                // Ensure the NPC is not stopped if it hasn't reached the destination yet
+                navMeshAgent.isStopped = false;
+            }
         }
     }
 }

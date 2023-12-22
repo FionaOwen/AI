@@ -1,31 +1,35 @@
-using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
-public class YesNoDialogHandler : MonoBehaviour
+public class KateInteraction : MonoBehaviour
 {
-    public GameObject objectToActivate;
+    public GameObject marshmallowObject;
 
-    [YarnCommand("takeMarshmellows")]
-    public void SetActiveYes()
+    [YarnCommand("takeMarshmellowsyouneed")]
+    public void TakeMarshmellows()
     {
-        Debug.Log("Take the marshmellow.");
-        SetActive(true);
+
+            Debug.Log("Player wants marshmallows! Implement your logic here.");
+
+            // Activate the GameObject (marshmallowObject)
+            if (marshmallowObject != null)
+            {
+                marshmallowObject.SetActive(true);
+            }
+        
     }
 
-    [YarnCommand("whatelse")]
-    public void SetActiveNo()
+    [YarnCommand("donotwantmarshmellow")]
+    public void WhatElse()
     {
-        Debug.Log("What else you need?");
-        SetActive(false);
-    }
 
-    private void SetActive(bool isActive)
-    {
-       
-        if (objectToActivate != null)
-        {
-            objectToActivate.SetActive(isActive);
-        }
+            Debug.Log("Player doesn't want marshmallows! Implement your logic here.");
+
+            // Deactivate the GameObject (marshmallowObject)
+            if (marshmallowObject != null)
+            {
+                marshmallowObject.SetActive(false);
+            }
+
     }
 }
